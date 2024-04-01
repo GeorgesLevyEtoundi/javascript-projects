@@ -1,0 +1,12 @@
+# The name of the action
+name: My first GitHub Action
+
+# The action's entrypoint
+# Tells when the action should run
+on: [push]
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World!!!"
+      - run: echo "This is another job"
